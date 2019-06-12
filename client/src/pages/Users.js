@@ -6,15 +6,15 @@ const Users = () => {
 
 
 const getUsers = () =>{
-    localStorage.getItem("token") // get token form local storage
+    localStorage.getItem("token") // get token form local storage?
     const config = {
         method: 'get',
         url: 'http://localhost:5000/api/user/',
         headers:{
-            // put it into the headers
+            // put it into the headers?
         }
     }
-    axios.get(config)
+    axios.get(config.ur)
     .then(res =>{
         console.log(res)
 
