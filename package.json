@@ -1,0 +1,20 @@
+{
+  "name": "webauth-iii-challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  "server": "nodemon index.js"
+  },
+  "repository": "https://github.com/Brandon-Pampuch/webauth-iii-challenge.git",
+  "author": "Brandon-Pampuch <brandonpampuch@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "helmet": "^3.18.0",
+    "knex": "^0.17.5",
+    "sqlite": "^3.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
