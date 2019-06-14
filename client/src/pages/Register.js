@@ -1,10 +1,11 @@
 import React from 'react';
 import axios from 'axios'
 
-class Login extends React.Component {
+class Register extends React.Component {
     state = { 
         "username": "",
-        "password": ""
+        "password": "",
+        "department": ""
      }
 
      textChangeHandler = (event) =>{
@@ -30,12 +31,6 @@ class Login extends React.Component {
             console.log(error)
         })
 
-        this.setState({
-            username : "",
-            password: ""
-     
-        
-    })
     }
     
 
@@ -47,7 +42,8 @@ class Login extends React.Component {
                 <h1>Register</h1>
                 <form onSubmit={this.register}>
                     <input onChange={this.textChangeHandler} name="username" placeholder="username" type="text" value={this.state.username}></input>
-                    <input onChange={this.textChangeHandler} name="password" placeholder="password" type="text" value={this.state.password}></input>
+                    <input onChange={this.textChangeHandler} name="password" placeholder="password" type="password" value={this.state.password}></input>
+                    <input onChange={this.textChangeHandler} name="department" placeholder="department" type="text" value={this.state.department}></input>
                     <button>Submit</button>
                 </form>
              
@@ -56,4 +52,4 @@ class Login extends React.Component {
         );
     }
 }
-export default Login;
+export default Register;
